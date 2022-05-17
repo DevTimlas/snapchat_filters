@@ -17,7 +17,7 @@ faceMesh = mpFaceMesh.FaceMesh()
 drawing_spec = mpDraw.DrawingSpec(thickness=1, circle_radius=1)
 
 wkdir = os.getcwd()
-print(wkdir)
+# print(wkdir)
 
 filters_config = {'anonymous':
                       [{'path': os.path.join(wkdir, "filters/msk1.png"),
