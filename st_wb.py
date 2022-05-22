@@ -138,10 +138,9 @@ def load_filter(filter_name="anonymous"):
          
     return filters, multi_filter_runtime
     
+    
+st.set_page_config(page_title="Galatic OPs")
 st.title("Webcam Live")
-# st.set_page_config(page_title="Galatic OPs")
-run = st.checkbox('Run')
-FRAME_WINDOW = st.image([])
 count = 0
 isFirstFrame = True
 sigma = 50
