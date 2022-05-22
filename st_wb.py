@@ -225,4 +225,4 @@ class VideoTransformer(VideoTransformerBase):
         return frame
 
 
-webrtc_streamer(key="example", media_stream_constraints={"video": True, "audio": False}, video_transformer_factory=VideoTransformer)
+webrtc_streamer(key="example", media_stream_constraints={"video": True, "audio": False}, video_processor_factory=VideoTransformer)
