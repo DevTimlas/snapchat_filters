@@ -240,4 +240,5 @@ webrtc_streamer(key="example",
                 media_stream_constraints={"video": True, "audio": False}, 
                 mode=WebRtcMode.SENDRECV,
                 rtc_configuration=RTC_CONFIGURATION,
-                video_processor_factory=VideoTransformer)
+                video_processor_factory=VideoTransformer,
+                async_processing=True)
