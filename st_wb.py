@@ -7,6 +7,7 @@ import FaceBlendCommon as fbc
 import math
 import streamlit as st
 import os
+import av
 from streamlit_webrtc import (
     AudioProcessorBase,
     RTCConfiguration,
@@ -16,9 +17,8 @@ from streamlit_webrtc import (
 )
 
 
-# RTC_CONFIGURATION = RTCConfiguration(
-#     {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
-# )
+RTC_CONFIGURATION = RTCConfiguration(
+    {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]})
 
 
 VISUALIZE_FACE_POINTS = False
@@ -239,5 +239,5 @@ class VideoTransformer(VideoTransformerBase):
 webrtc_streamer(key="example",
                 media_stream_constraints={"video": True, "audio": False}, 
                 mode=WebRtcMode.SENDRECV,
-               
-                video_processor_factory=VideoTransformer) #  rtc_configuration=RTC_CONFIGURATION,
+                rtc_configuration=RTC_CONFIGURATION,
+                video_processor_factory=VideoTransformer)
