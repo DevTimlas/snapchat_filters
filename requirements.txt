@@ -1,6 +1,7 @@
 opencv-python==4.5.2.54
-mediapipe==0.8.8.1
+mediapipe
 numpy==1.19.5
 opencv-python-headless==4.5.2.54
 opencv-contrib-python==4.5.2.54
 flask==2.1.1
+streamlit-webrtc
