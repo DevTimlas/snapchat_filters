@@ -1,1 +1,1 @@
-opencv3-python
+python3-opencv
